@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(appname: "Azam's test app"),
+      home: MyHomePage(appname: "Azam's test bloc app using provider"),
     );
   }
 }
