@@ -12,7 +12,8 @@ main() {
   BlocSupervisor.delegate = MyBlocDelegate();
   runApp(BlocProvider(
     builder: (BuildContext context) => new PageManagerBloc()
-    ..dispatch(GotoLoginOrSignupPage()),
+    // ..dispatch(GotoLoginOrSignupPage()),
+    ..dispatch(GotoSplashPage()),
     child: MyApp(),
   ));
 }

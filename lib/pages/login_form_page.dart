@@ -11,7 +11,6 @@ class LoginFormPage extends StatefulWidget {
 class _LoginFormPageState extends State<LoginFormPage> {
   @override
   Widget build(BuildContext context) {
-    final PageManagerBloc _bloc = BlocProvider.of<PageManagerBloc>(context);
     return Scaffold(
       body: Stack(children: <Widget>[
         Container(
@@ -44,11 +43,8 @@ class _LoginFormPageState extends State<LoginFormPage> {
             ),
             Align(
                 alignment: Alignment.bottomCenter,
-                child: BlocProvider(
-                  builder: (context) =>
-                      BlocProvider.of<PageManagerBloc>(context),
-                  child: LoginFormContainer(),
-                )),
+                child: LoginFormContainer(),
+                ),
           ],
         ),
       ]),

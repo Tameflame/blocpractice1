@@ -45,9 +45,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
             ),
             Align(
                 alignment: Alignment.bottomCenter,
-                child: BlocProvider(
-                  builder: (context) => BlocProvider.of<PageManagerBloc>(context),
-                  child: LoginSignupContainer())
+                child: LoginSignupContainer(),
                 )
           ],
         ),
@@ -71,9 +69,7 @@ class LoginSignupContainer extends StatelessWidget {
             SizedBox(
               height: 40,
             ),
-            BlocProvider(
-              builder: (context) => BlocProvider.of<PageManagerBloc>(context),
-              child: LoginButton()),
+            LoginButton(),
             SizedBox(
               height: 20,
             ),

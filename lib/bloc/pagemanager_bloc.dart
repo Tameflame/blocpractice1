@@ -12,6 +12,8 @@ class PageManagerBloc extends Bloc<PageManagerEvent, PageManagerState> {
   ) async* {
     if (event is GotoSplashPage) {
       yield ShowSplashPage();
+      await Future.delayed(Duration(milliseconds: 2500));
+      yield ShowLoginOrSignupPage();
     }
     if (event is GotoLoginOrSignupPage) {
       yield ShowLoginOrSignupPage();

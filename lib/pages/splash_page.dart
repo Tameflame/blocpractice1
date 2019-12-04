@@ -27,7 +27,7 @@ class SplashPage extends StatelessWidget {
                         color: Color(0xFF07877D))),
               ]),
             ),
-          )
+          ),
         ],
       ),
     );
